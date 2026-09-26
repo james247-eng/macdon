@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Macdon Steel & Building Materials">
+<meta property="og:description" content="Iron rods, cement, nails and binding wire — delivered by our own fleet across Nigeria.">
+<meta property="og:image" content="https://macdonsteel.com/images/og-cover.jpg">
+<meta property="og:url" content="https://macdonsteel.com/">
+<meta property="og:site_name" content="Macdon Steel & Building Materials">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Macdon Steel & Building Materials">
+<meta name="twitter:description" content="Iron rods, cement, nails and binding wire — delivered by our own fleet across Nigeria.">
+<meta name="twitter:image" content="https://macdonsteel.com/images/og-cover.jpg">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Macdon Steel &amp; Building Materials | Iron Rods, Cement, Hardware Supply</title>
+<meta name="description" content="Macdon Dynamic Multi Link supplies iron rods, cement, nails and binding wire to builders across Nigeria, delivered by our own fleet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B1F23;
+    --ink-soft:#4A5257;
+    --paper:#FFFFFF;
+    --surface:#EEF1F2;
+    --steel:#1F4B66;
+    --steel-dark:#14344A;
+    --accent:#D9772B;
+    --accent-dark:#B85F1E;
+    --line:#D7DBDD;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+
+  h1,h2,h3{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:800;
+    line-height:1.05;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+
+  .wrap{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:14px 28px;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:15px;
+    border-radius:2px;
+    border:2px solid transparent;
+    cursor:pointer;
+  }
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:var(--accent-dark);}
+  .btn-outline{border-color:rgba(255,255,255,0.7);color:#fff;}
+  .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,0.1);}
+  .btn-outline-dark{border-color:var(--steel);color:var(--steel);}
+  .btn-outline-dark:hover{background:var(--steel);color:#fff;}
+
+  /* Header */
+  header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 32px;
+    max-width:1200px;
+    margin:0 auto;
+  }
+  .logo{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:800;
+    font-size:26px;
+    letter-spacing:-0.02em;
+    color:var(--steel-dark);
+  }
+  .logo span{color:var(--accent);}
+  .nav-links{
+    display:flex;
+    gap:32px;
+    font-weight:600;
+    font-size:15px;
+  }
+  .nav-links a:hover{color:var(--steel);}
+  .nav-cta{display:flex;align-items:center;gap:20px;}
+  .nav-phone{font-weight:700;font-size:15px;color:var(--steel-dark);}
+  @media(max-width:820px){
+    .nav-links{display:none;}
+  }
+
+  /* Hero */
+  .hero{
+    position:relative;
+    min-height:640px;
+    display:flex;
+    align-items:flex-end;
+    background:linear-gradient(160deg,var(--steel-dark) 0%,var(--steel) 100%);
+    overflow:hidden;
+  }
+  .hero-media{
+    position:absolute;
+    inset:0;
+  }
+  .hero-media img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0.55;
+  }
+  .hero-media::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(0deg,rgba(20,52,74,0.92) 10%,rgba(20,52,74,0.35) 55%,rgba(20,52,74,0.1) 100%);
+  }
+  .hero-inner{
+    position:relative;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 32px 64px;
+    width:100%;
+  }
+  .hero-content{max-width:620px;}
+  .hero h1{
+    font-size:clamp(38px,6vw,64px);
+    color:#fff;
+    margin-bottom:20px;
+  }
+  .hero p{
+    color:rgba(255,255,255,0.88);
+    font-size:18px;
+    max-width:480px;
+    margin-bottom:32px;
+  }
+  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;}
+
+  /* Stats bar */
+  .stats{
+    background:var(--steel-dark);
+  }
+  .stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    padding:28px 0;
+  }
+  .stat{
+    text-align:left;
+    padding:0 24px;
+    border-left:1px solid rgba(255,255,255,0.15);
+  }
+  .stat:first-child{border-left:none;}
+  .stat-number{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:800;
+    font-size:38px;
+    color:#fff;
+  }
+  .stat-label{
+    font-size:13px;
+    color:rgba(255,255,255,0.65);
+    margin-top:2px;
+  }
+  @media(max-width:820px){
+    .stats-grid{grid-template-columns:repeat(2,1fr);row-gap:24px;}
+    .stat:nth-child(3){border-left:none;}
+  }
+
+  /* Section shell */
+  section{padding:88px 0;}
+  .section-head{
+    max-width:560px;
+    margin-bottom:48px;
+  }
+  .section-head h2{
+    font-size:clamp(30px,4vw,42px);
+    margin-bottom:14px;
+  }
+  .section-head p{
+    color:var(--ink-soft);
+    font-size:16px;
+  }
+
+  /* Products - asymmetric grid */
+  .products{background:var(--surface);}
+  .product-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+    grid-template-rows:auto auto;
+    gap:16px;
+  }
+  .product-card{
+    position:relative;
+    border-radius:2px;
+    overflow:hidden;
+    min-height:220px;
+    background:var(--steel);
+  }
+  .product-card img{
+    width:100%;height:100%;
+    object-fit:cover;
+    position:absolute;inset:0;
+    opacity:0.85;
+  }
+  .product-card.featured{
+    grid-row:span 2;
+    min-height:456px;
+  }
+  .product-label{
+    position:relative;
+    z-index:2;
+    padding:20px;
+    height:100%;
+    display:flex;
+    align-items:flex-end;
+    background:linear-gradient(0deg,rgba(20,52,74,0.85) 0%,rgba(20,52,74,0) 60%);
+  }
+  .product-label span{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    font-size:24px;
+    color:#fff;
+  }
+  .product-card.viewall{
+    background:var(--ink);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  .product-card.viewall a{
+    font-weight:700;
+    color:#fff;
+    font-size:16px;
+  }
+  @media(max-width:820px){
+    .product-grid{grid-template-columns:1fr 1fr;}
+    .product-card.featured{grid-column:span 2;grid-row:span 1;min-height:260px;}
+  }
+
+  /* Why choose us */
+  .why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+  }
+  .why-item{
+    padding:0 28px;
+    border-left:1px solid var(--line);
+  }
+  .why-item:first-child{border-left:none;padding-left:0;}
+  .why-number{
+    font-family:'Barlow Condensed',sans-serif;
+    font-size:15px;
+    font-weight:700;
+    color:var(--accent);
+    margin-bottom:14px;
+  }
+  .why-item h3{
+    font-size:22px;
+    margin-bottom:10px;
+  }
+  .why-item p{
+    color:var(--ink-soft);
+    font-size:15px;
+  }
+  @media(max-width:820px){
+    .why-grid{grid-template-columns:1fr 1fr;row-gap:32px;}
+    .why-item:nth-child(3){border-left:none;padding-left:0;}
+  }
+
+  /* Fleet */
+  .fleet{
+    background:var(--paper);
+  }
+  .fleet-inner{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:56px;
+    align-items:center;
+  }
+  .fleet-media{
+    border-radius:2px;
+    overflow:hidden;
+    aspect-ratio:4/3;
+    background:var(--surface);
+  }
+  .fleet-media img{width:100%;height:100%;object-fit:cover;}
+  .fleet-text h2{font-size:clamp(28px,4vw,38px);margin-bottom:18px;}
+  .fleet-text p{color:var(--ink-soft);font-size:16px;margin-bottom:24px;}
+  .fleet-point{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    margin-bottom:16px;
+  }
+  .fleet-point .dot{
+    width:8px;height:8px;
+    border-radius:50%;
+    background:var(--accent);
+    margin-top:8px;
+    flex-shrink:0;
+  }
+  @media(max-width:820px){
+    .fleet-inner{grid-template-columns:1fr;}
+  }
+
+  /* Testimonials */
+  .testimonials{background:var(--steel-dark);}
+  .testimonials .section-head h2,
+  .testimonials .section-head p{color:#fff;}
+  .testimonials .section-head p{color:rgba(255,255,255,0.7);}
+  .testi-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:32px;
+  }
+  .testi-card{
+    padding:28px 0 0;
+    border-top:2px solid rgba(255,255,255,0.2);
+  }
+  .testi-card p{
+    color:#fff;
+    font-size:17px;
+    margin-bottom:20px;
+  }
+  .testi-name{
+    color:rgba(255,255,255,0.6);
+    font-size:14px;
+    font-weight:600;
+  }
+  @media(max-width:820px){
+    .testi-grid{grid-template-columns:1fr;}
+  }
+
+  /* CTA banner */
+  .cta-banner{
+    background:var(--accent);
+    padding:64px 0;
+  }
+  .cta-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:24px;
+  }
+  .cta-inner h2{
+    color:#fff;
+    font-size:clamp(28px,4vw,38px);
+    max-width:520px;
+  }
+  .cta-actions{display:flex;gap:16px;flex-wrap:wrap;}
+  .cta-banner .btn-outline{border-color:#fff;color:#fff;}
+  .cta-banner .btn-primary{background:var(--steel-dark);}
+  .cta-banner .btn-primary:hover{background:var(--ink);}
+
+  /* Footer */
+  footer{background:var(--ink);color:rgba(255,255,255,0.7);padding:64px 0 24px;}
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr 1.2fr;
+    gap:32px;
+    padding-bottom:40px;
+    border-bottom:1px solid rgba(255,255,255,0.12);
+  }
+  .footer-logo{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:800;
+    font-size:24px;
+    color:#fff;
+    margin-bottom:12px;
+  }
+  .footer-logo span{color:var(--accent);}
+  footer h4{
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:16px;
+    letter-spacing:0.02em;
+  }
+  footer ul li{margin-bottom:10px;font-size:14px;}
+  footer ul li a:hover{color:#fff;}
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    padding-top:24px;
+    font-size:13px;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  @media(max-width:820px){
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">MACDON<span>.</span></div>
+    <nav class="nav-links">
+      <a href="products.html">Products</a>
+      <a href="#fleet">Fleet</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+2340000000000" class="nav-phone">0800 000 0000</a>
+      <a href="contact.html" class="btn btn-outline-dark">Get a Quote</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <!-- Replace with a branded truck photo, 1600px+ wide -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRMf7vroaiYtY7Rnw8zlXhrRnqZhEZwFUwRy8nrn9vugsCJCVCl_WTBhL-&s=10" alt="Macdon branded delivery trucks loaded with steel and cement">
+  </div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1>Steel, cement and hardware that reach the site on time.</h1>
+      <p>Macdon Dynamic Multi Link supplies iron rods, cement, nails and binding wire to builders across Lagos and beyond — delivered by our own fleet.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+        <a href="tel:+2347062264108" class="btn btn-outline">Call 0800 000 0000</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Years Supplying Sites</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">40+</div>
+      <div class="stat-label">Trucks In Our Fleet</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">20</div>
+      <div class="stat-label">States Reached</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">1,200+</div>
+      <div class="stat-label">Sites Supplied</div>
+    </div>
+  </div>
+</div>
+
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Materials for every stage of the build</h2>
+      <p>From foundation to finishing, we stock the core materials contractors reorder most.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-card featured">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE3okE3-Yjg2oqnWPchvrLcbWoft4aI08BtWfXYytfBA&s=10" alt="Iron rods of various sizes stacked">
+        <div class="product-label"><span>Iron Rods</span></div>
+      </div>
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBGFafpWAq5WPRC85aBxeCwDZrfUvNK6l6w7qYZq32g&s=10" alt="Bags of cement">
+        <div class="product-label"><span>Cement</span></div>
+      </div>
+      <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWs4LEyschnQDJaYlkg5n0cEqQSKdmVZ8VUyWSSa2UINEYgmiWoBAK43pd&s=10" alt="Boxes of nails">
+        <div class="product-label"><span>Nails</span></div>
+      </div>
+      <div class="product-card">
+        <img src="https://www.reptongroup.ng/cdn/shop/files/WhatsApp_Image_2026-05-16_at_23.39.34_2_afffcda4-23c5-4588-bd3c-675b3d08b2b9.jpg?v=1779025806" alt="Rolls of binding wire">
+        <div class="product-label"><span>Binding Wire</span></div>
+      </div>
+      <div class="product-card viewall">
+        <a href="products.html">View All Materials →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Why contractors order from Macdon</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-number">Quality</div>
+        <h3>Certified materials</h3>
+        <p>Every batch of rods and cement is sourced from certified mills and manufacturers, not open-market resale.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-number">Delivery</div>
+        <h3>Fleet-backed supply</h3>
+        <p>Our own trucks handle delivery, so your order isn't waiting on a third-party transporter.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-number">Pricing</div>
+        <h3>Trade &amp; bulk rates</h3>
+        <p>Standing accounts for contractors and developers with volume-based pricing.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-number">Reach</div>
+        <h3>Nationwide coverage</h3>
+        <p>Same-day delivery within Lagos, scheduled runs to sites across the country.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fleet" id="fleet">
+  <div class="wrap fleet-inner">
+    <div class="fleet-media">
+      <!-- Replace with a branded truck photo -->
+      <img src="Gemini_Generated_Image_kdbrmukdbrmukdbr.jpg" alt="Macdon branded truck being loaded with building materials">
+    </div>
+    <div class="fleet-text">
+      <h2>Our trucks do the heavy lifting</h2>
+      <p>Every Macdon delivery moves on a branded truck from our own fleet — no waiting on brokered transport, no guessing when your materials will land.</p>
+      <div class="fleet-point">
+        <span class="dot"></span>
+        <p>Same-day delivery within Lagos on standard orders.</p>
+      </div>
+      <div class="fleet-point">
+        <span class="dot"></span>
+        <p>Scheduled interstate runs for large site orders.</p>
+      </div>
+      <div class="fleet-point">
+        <span class="dot"></span>
+        <p>Real-time order tracking from dispatch to drop-off.</p>
+      </div>
+      <a href="contact.html" class="btn btn-outline-dark">Schedule a Delivery</a>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Trusted on site</h2>
+      <p>What contractors and developers say about ordering from Macdon.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p>"We've never had a delayed delivery on a rod order — even for the interstate sites."</p>
+        <div class="testi-name">Site Manager, Lekki development</div>
+      </div>
+      <div class="testi-card">
+        <p>"Their trade pricing on bulk cement made a real difference on our margins this year."</p>
+        <div class="testi-name">Contractor, Ikorodu</div>
+      </div>
+      <div class="testi-card">
+        <p>"One call and the truck is loaded. That's the whole reason we stayed with them."</p>
+        <div class="testi-name">Developer, Ogun State</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <div class="wrap cta-inner">
+    <h2>Ready to stock your next site?</h2>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+      <a href="tel:+2340000000000" class="btn btn-outline">Call 0800 000 0000</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">MACDON<span>.</span></div>
+        <p style="font-size:14px;max-width:260px;">Macdon Dynamic Multi Link Ltd — construction materials supply across Nigeria.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#fleet">Our Fleet</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Materials</h4>
+        <ul>
+          <li><a href="products.html">Iron Rods</a></li>
+          <li><a href="products.html">Cement</a></li>
+          <li><a href="products.html">Nails</a></li>
+          <li><a href="products.html">Binding Wire</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>+2347062264108</li>
+          <li>macdon132@gmail.com</li>
+          <li>Lagos, Nigeria</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Macdon Dynamic MultiLink Ltd. All rights reserved.</span>
+      <span>Built by Easblink Tech</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
